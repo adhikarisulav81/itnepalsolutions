@@ -1416,6 +1416,105 @@ section {
   }
 }
 
+
+
+/* Begin Sitemap */
+#sitemap-hero {
+  width: 100%;
+  height: 50vh;
+  /* background: url("../img/logo1.png") top center no-repeat; */
+  background-color: var(--secondary-color);
+  background-size: cover;
+  position: relative;
+  padding-top: 80px;
+}
+
+#sitemap-hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#sitemap-hero h1 {
+  margin: 0;
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+}
+
+#sitemap-hero .container .row::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 6px;
+  background: var(--secondary-color);
+  bottom: 0;
+  left: calc(15% - 25px);
+}
+
+@media (max-width: 997px) {
+  #sitemap-hero {
+      text-align: center;
+      padding-top: 58px;
+  }
+
+  #sitemap-hero h1 {
+      font-size: 30px;
+      /* margin-bottom: 8px; */
+  }
+
+  #sitemap-hero .container .row::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 6px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: calc(50% - 25px);
+  }
+
+}
+
+@media (max-height: 500px) {
+  #sitemap-hero {
+      height: 120vh;
+  }
+}
+
+.sitemap-title {
+  /* text-align: center; */
+  padding-bottom: 30px;
+  position: relative;
+  color: var(--black);
+  
+}
+.sitemap-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
+  position: relative;
+}
+.sitemap-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: 0;
+  /* left: calc(50% - 25px); */
+}
+/* End Sitemap */
+
 /*--------------------------------------------------------------
 # Start Footer
 --------------------------------------------------------------*/
